@@ -16,17 +16,17 @@
 	<div class="col-md-7 my-2 mx-auto">
 		<table class="table table-striped">
 		<tr>
-			<th>Num</th><th>Title</th><th>Contents</th><th>Writer</th><th>Regdate</th><th>Hits</th>
+			<th>num</th><th>title</th><th>contents</th><th>writer</th><th>regdate</th><th>hits</th>
 		</tr>
 		
 		<c:forEach items="${list}" var="dto">
 		<tr>
-			<td>${dto.Num}</td>
-			<td>${dto.Title}</td>
-			<td>${dto.Contents}</td>
-			<td>${dto.Writer}</td>
-			<td>${dto.Regdate}</td>
-			<td>${dto.Hits}</td>
+			<td>${dto.num}</td>
+			<td>${dto.title}</td>
+			<td>${dto.contents}</td>
+			<td>${dto.writer}</td>
+			<td>${dto.regdate}</td>
+			<td>${dto.hits}</td>
 		</tr>
 		</c:forEach>
 		</table>

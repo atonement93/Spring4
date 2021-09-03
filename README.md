@@ -22,4 +22,6 @@ CONTENTS : textarea 태그 사용
 	/notice/insert POST
 	list 
 	4) 삭제
+	/notice/delete GET
+	list
 	5) 수정

@@ -2,49 +2,49 @@ package com.mhs.s4.notice;
 
 public class NoticeDTO {
 	
-	private long Num;
-	private String Title;
-	private String Contents;
-	private String Writer;
-	private String Regdate;
-	private int Hits;
-	
+	private long num;
+	private String title;
+	private String contents;
+	private String writer;
+	private String regdate;
+	private int hits;
 	public long getNum() {
-		return Num;
+		return num;
 	}
 	public void setNum(long num) {
-		Num = num;
+		this.num = num;
 	}
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 	public String getContents() {
-		return Contents;
+		return contents;
 	}
 	public void setContents(String contents) {
-		Contents = contents;
+		this.contents = contents;
 	}
 	public String getWriter() {
-		return Writer;
+		return writer;
 	}
 	public void setWriter(String writer) {
-		Writer = writer;
+		this.writer = writer;
 	}
 	public String getRegdate() {
-		return Regdate;
+		return regdate;
 	}
 	public void setRegdate(String regdate) {
-		Regdate = regdate;
+		this.regdate = regdate;
 	}
 	public int getHits() {
-		return Hits;
+		return hits;
 	}
 	public void setHits(int hits) {
-		Hits = hits;
+		this.hits = hits;
 	}
 	
+
 
 }

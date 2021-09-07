@@ -22,6 +22,13 @@ public class QnaController {
 	public String getBoard() {
 		return "qna";
 	}
+	
+	@GetMapping("insert")
+	public ModelAndView setInsert() throws Exception {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("board/insert");
+		return mv;
+	}
 
 	@GetMapping("list")
 	public ModelAndView getList() throws Exception {
@@ -31,4 +38,5 @@ public class QnaController {
 		mv.addObject("list", ar);
 		return mv;
 	}
+	
 }

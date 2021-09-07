@@ -25,6 +25,13 @@ public class NoticeController {
 		return "notice";
 	}
 	
+	@GetMapping("insert")
+	public ModelAndView setInsert() throws Exception {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("board/insert");
+		return mv;
+	}
+	
 	@GetMapping("list") //@RequestMapping(value="list", method=RequestMapping.GET) 와 같음
 	public ModelAndView getList() throws Exception {
 		ModelAndView mv = new ModelAndView();

@@ -3,6 +3,9 @@
 <html>
 <head>
 	<title>Home</title>
+	<script type="type/javascript">
+		alert('Hello world');
+	</script>
 </head>
 <body>
 <h1>

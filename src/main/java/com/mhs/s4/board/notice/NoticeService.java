@@ -1,46 +1,33 @@
-package com.mhs.s4.board.notice;
+package com.mhs.s4.board;
 
 import java.util.List;
 
-import com.mhs.s4.board.BoardDAO;
-import com.mhs.s4.board.BoardDTO;
+import com.mhs.s4.util.Pager;
 
-public class NoticeService implements BoardDAO {
-
-	@Override
-	public long getCount() throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public List<BoardDTO> getList() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public BoardDTO getSelect(BoardDTO boardDTO) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public int serInsert(BoardDTO boardDTO) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int setDelete(BoardDTO boardDTO) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int setUpdate(BoardDTO boardDTO) throws Exception {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+public interface BoardDAO {
+	
+	
+	//전체 갯수
+		public Long getCount(Pager pager)throws Exception; 
+		
+		//List
+		public abstract List<BoardDTO>  getList(Pager pager)throws Exception;
+		
+		//상세
+		public abstract BoardDTO getSelect(BoardDTO boardDTO)throws Exception;
+		
+		//글쓰기
+		public int setInsert(BoardDTO boardDTO)throws Exception;
+		
+		//글삭제
+		public int setDelete(BoardDTO boardDTO)throws Exception;
+		
+		//글수정
+		public int setUpdate(BoardDTO boardDTO)th@Override
+	rows Exception;
 
 }
+
+
+
+
